@@ -5,7 +5,13 @@
 
 num = 10
 num.times do
-	Doctor.create(first_name: "#{Faker::Name.first_name}", last_name: "#{Faker::Name.last_name}", specialty: "#{Faker::Job.field}", postal_code: 31000)
+	
+	b = Doctor.create(first_name: "#{Faker::Name.first_name}", last_name: "#{Faker::Name.last_name}", postal_code: 3134000)
+	3.times do
+		a = Speciality.create(speciality: "#{Faker::Job.field}")
+		b.specialities << a
+
+	end
 end
 
 num.times do
@@ -20,5 +26,6 @@ end
 puts "----------------------- Seed -----------------------"
 puts " Created #{num.to_s} Doctors                      "
 puts " Created #{num.to_s} Patients                     "
+puts " Created #{3*num} specialities"
 puts " Created #{num.to_s} Appointments                 "
 puts "----------------------------------------------------"
