@@ -28,10 +28,10 @@ rails db:seed
 
 ### Team-Programing :
 
-@farida
-@Nicolas B
-@Gabrielle Silvano
-@lise
-@Matcha
-@Nico Hermet
-@Salah
+@farida <br/>
+@Nicolas B <br/>
+@Gabrielle Silvano <br/>
+@lise <br/>
+@Matcha <br/>
+@Nico Hermet <br/>
+@Salah <br/>
